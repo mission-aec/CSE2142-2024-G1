@@ -5,6 +5,19 @@ import java.util.*;
 
 public class EmployeeManager {
     public static void main(String[] args) {
+        // Task#2: Application Now Terminates Early if the Number of Arguments pass into
+        // it is Wrong, fix it
+        if (args.length != 1) {
+            System.out.println("Options:");
+            System.out.println(" l");
+            System.out.println(" s");
+            System.out.println(" +");
+            System.out.println(" ?");
+            System.out.println(" c");
+            System.out.println(" u");
+            System.out.println(" d");
+            return;
+        }
         // Check arguments
         if (args[0].equals("l")) {
             System.out.println("Loading data ...");
